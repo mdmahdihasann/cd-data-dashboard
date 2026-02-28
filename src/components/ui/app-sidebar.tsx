@@ -19,7 +19,7 @@ export function AppSidebar() {
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarMenu>
-                        <div className="px-2.5 mb-2">
+                        <div className="px-2.5 mb-2 pt-4">
                             <h3 className="text-3xl font-extrabold tracking-tight font-serif">
                                 <span className="text-blue">Data</span>
                                 <span className="text-black dark:text-white">Soft</span>
