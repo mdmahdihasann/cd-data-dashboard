@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex-shrink-0">
           <AppSidebar />
         </div>
-        <div className="w-full ">
+        <div className="w-full relative">
           <Header />
           <main className="flex-1 bg-zinc-100 dark:bg-zinc-900 p-6 h-full">
             {children}

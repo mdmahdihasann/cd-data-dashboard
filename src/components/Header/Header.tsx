@@ -6,10 +6,10 @@ import {
 
 const Header = () => {
   return (
-    <div className='w-full bg-white p-2.5 flex items-center justify-between shadow-sm'>
+    <div className='w-full bg-white p-2.5 flex items-center justify-between sticky top-0 left-0 z-50'>
 
       {/* Sidebar Trigger */}
-      <SidebarTrigger className="p-2 bg-gray-200 rounded-md">
+      <SidebarTrigger className="p-2 bg-gray-300 rounded-md text-gray-600">
         Menu
       </SidebarTrigger>
 

@@ -1,7 +1,8 @@
+import CardList from "./CardList"
 
 const Dashboard = () => {
   return (
-    <h2 className='text-3xl text-white'>Dashboard test</h2>
+    <CardList/>
   )
 }
 
