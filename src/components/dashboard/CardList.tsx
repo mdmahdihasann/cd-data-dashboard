@@ -1,10 +1,12 @@
 import { AnalysisChart } from "./AnalysisChart";
 import Card from "./Card";
+import { InfoTable } from "./InfoTable";
+import { Revenue } from "./Revenue";
 
 const CardList: React.FC = () => {
     return (
         <div className="flex flex-col gap-8">
-            <div className="w-full h-auto bg-[url('/img.webp')] bg-cover bg-center flex flex-col justify-start p-6 rounded-2xl gap-6">
+            <div className="w-full h-auto bg-[url('/img.webp')] bg-cover bg-center flex flex-col justify-start p-6 rounded-2xl gap-6 shadow-sm">
                 <div>
                     <h2 className="text-2xl font-medium text-gray-800">
                         Sales Distribution
@@ -25,8 +27,13 @@ const CardList: React.FC = () => {
             </div>
 
             {/* chart */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+            <div className="grid grid-cols-[1.2fr_2fr] gap-4 w-full">
                 <AnalysisChart/>
+                <Revenue/>
+            </div>
+            {/* table */}
+            <div className="grid grid-cols-[1.2fr_2fr] gap-4 w-full">
+                <InfoTable/>
             </div>
         </div>
 
