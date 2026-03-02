@@ -1,7 +1,28 @@
 import { AnalysisChart } from "./AnalysisChart";
 import Card from "./Card";
+import { DataTable } from "./DataTable";
 import { InfoTable } from "./InfoTable";
 import { Revenue } from "./Revenue";
+
+const columns = [
+  {
+    header: 'Product',
+    accessorKey: 'productName',
+  },
+  {
+    header: 'Price',
+    accessorKey: 'prices',
+  },
+]
+
+const data = [
+  { productName: "Wireless Mouse", prices: 29.99 },
+  { productName: "Computer", prices: 500.99 },
+  { productName: "Mouse", prices: 500.99 },
+  { productName: "Monitor", prices: 500.99 },
+  { productName: "Full Setup", prices: 500.99 },
+]
+
 
 const CardList: React.FC = () => {
     return (
@@ -32,7 +53,8 @@ const CardList: React.FC = () => {
                 <Revenue/>
             </div>
             {/* table */}
-            <div className="grid grid-cols-[1.2fr_2fr] gap-4 w-full">
+            <div className="grid grid-cols-[2fr_1.2fr] gap-4 w-full">
+                <DataTable columns={columns} data={data}/>
                 <InfoTable/>
             </div>
         </div>
