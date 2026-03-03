@@ -1,8 +1,13 @@
+import ImageCard from '@/components/profile/ImageCard'
+import {ProfileUserFrom} from '@/components/profile/ProfileUserFrom'
 import React from 'react'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <>
+      <ImageCard/>
+      <ProfileUserFrom/>
+    </>
   )
 }
 
